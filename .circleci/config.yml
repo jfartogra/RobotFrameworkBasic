@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Preinstall"
+          command: apt-get update && apt-get install -y openssh-client git
+      - run:
           name: "Robot framework running?"
           command: "robot --version"
 
