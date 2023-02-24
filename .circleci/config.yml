@@ -16,7 +16,13 @@ jobs:
       - checkout
       - run:
           name:  "Robot framework running?"
-          command:  "robot --version"    
+          command:  "robot --version"   
+      - run:
+          name:  "ls"
+          command:  "ls"
+      - run:
+          name:  "pwd"
+          command:  "pwd"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
