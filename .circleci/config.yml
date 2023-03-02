@@ -25,7 +25,7 @@ jobs:
           command: "echo $PATH"
       - run:
           name: "whereisgecko"
-          run: "whereis geckodriver"
+          command: "whereis geckodriver"
       - run:
           name: "Add gecko driver to PATH"
           command: "export PATH=\"$PATH:/root/project:.\""
