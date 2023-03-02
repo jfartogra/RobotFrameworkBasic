@@ -21,8 +21,14 @@ jobs:
           name:  "pwd"
           command:  "pwd"
       - run:
-          name: "whereIsGeckoDriver"
-          command: "whereis geckodriver"
+          name: "First echo PATH"
+          command: "echo $PATH"
+      - run:
+          name: "Add gecko driver to PATH"
+          command: "PATH = \"$PATH:/root/project\""
+      - run: 
+          name: "Second echo PATH"
+          command: "echo $PATH" 
       - run:
           name:  "run testcase"
           command:  "robot -t \"website up and running\" demoblaze.robot"
