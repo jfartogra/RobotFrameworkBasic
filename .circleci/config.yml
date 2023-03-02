@@ -24,8 +24,11 @@ jobs:
           name: "First echo PATH"
           command: "echo $PATH"
       - run:
-          name: "whereisgecko"
+          name:  "whereisgecko"
           command: "whereis geckodriver"
+      - run:
+          name:  "whereisfirefox"
+          command:  "whereis firefox"
       - run:
           name: "copy geckodriver"
           command: "cp geckodriver /usr/sbin"
