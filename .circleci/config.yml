@@ -27,8 +27,8 @@ jobs:
           name: "whereisgecko"
           command: "whereis geckodriver"
       - run:
-          name: "Add gecko driver to PATH"
-          command: "export PATH=\"$PATH:/root/project:.\""
+          name: "copy geckodriver"
+          command: "cp geckodriver /usr/sbin"
       - run: 
           name: "Second echo PATH"
           command: "echo $PATH" 
