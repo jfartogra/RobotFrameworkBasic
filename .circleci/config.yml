@@ -21,6 +21,9 @@ jobs:
           name:  "pwd"
           command:  "pwd"
       - run:
+          name: "whereIsGeckoDriver"
+          command: "whereis geckodriver"
+      - run:
           name:  "run testcase"
           command:  "robot -t \"website up and running\" demoblaze.robot"
 
